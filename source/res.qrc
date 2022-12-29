@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/sounds">
+        <file>lz.wav</file>
+        <file>vz.wav</file>
+        <file>vzm.wav</file>
+        <file>HeatleyBros.wav</file>
+        <file>gameover.mp3</file>
+        <file>vzp.wav</file>
+        <file>startmusic.mp3</file>
+    </qresource>
+    <qresource prefix="/images">
+        <file>bullet.png</file>
+        <file>enemy.png</file>
+        <file>spaceship.png</file>
+        <file>EBullet.png</file>
+        <file>space2.png</file>
+        <file>meteor.png</file>
+        <file>speedship.png</file>
+        <file>logo.png</file>
+        <file>gameover.png</file>
+    </qresource>
+    <qresource prefix="/text">
+        <file>text.txt</file>
+    </qresource>
+</RCC>

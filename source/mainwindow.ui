@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>1024</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="Mainmenu">
+       <widget class="QPushButton" name="StartGame">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>530</y>
+          <width>231</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Start Game</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="LeaderBoard">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>640</y>
+          <width>231</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>LeaderBoard</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Quite">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>750</y>
+          <width>231</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Quite</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>-10</x>
+          <y>50</y>
+          <width>1031</width>
+          <height>531</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="res.qrc">:/images/logo.png</pixmap>
+        </property>
+       </widget>
+       <zorder>label</zorder>
+       <zorder>StartGame</zorder>
+       <zorder>LeaderBoard</zorder>
+       <zorder>Quite</zorder>
+      </widget>
+      <widget class="QWidget" name="gamewidget">
+       <widget class="QWidget" name="verticalLayoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>-10</x>
+          <y>-10</y>
+          <width>791</width>
+          <height>1021</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="GameLayout">
+         <item>
+          <widget class="QGraphicsView" name="gamescene">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>1024</width>
+             <height>1024</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QLabel" name="score">
+        <property name="geometry">
+         <rect>
+          <x>780</x>
+          <y>50</y>
+          <width>231</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>36</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: #292;</string>
+        </property>
+        <property name="text">
+         <string>Score: 0</string>
+        </property>
+        <property name="textFormat">
+         <enum>Qt::AutoText</enum>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="health">
+        <property name="geometry">
+         <rect>
+          <x>780</x>
+          <y>180</y>
+          <width>231</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>36</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: #ff0000;</string>
+        </property>
+        <property name="text">
+         <string>Health: 3</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="restartGame">
+        <property name="geometry">
+         <rect>
+          <x>790</x>
+          <y>400</y>
+          <width>211</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Restart</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="mainmenu">
+        <property name="geometry">
+         <rect>
+          <x>790</x>
+          <y>510</y>
+          <width>211</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Main Menu</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="text">
+        <property name="geometry">
+         <rect>
+          <x>780</x>
+          <y>670</y>
+          <width>221</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+       </widget>
+       <widget class="QLabel" name="name">
+        <property name="geometry">
+         <rect>
+          <x>800</x>
+          <y>610</y>
+          <width>231</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>22</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>Enter your name:</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="save">
+        <property name="geometry">
+         <rect>
+          <x>790</x>
+          <y>740</y>
+          <width>201</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Save</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="Leaderbord">
+       <widget class="QListWidget" name="leader">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>80</y>
+          <width>991</width>
+          <height>901</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Back">
+        <property name="geometry">
+         <rect>
+          <x>4</x>
+          <y>12</y>
+          <width>201</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Back</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
